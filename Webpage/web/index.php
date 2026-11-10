@@ -20,6 +20,8 @@
                 <a href="jobs.html">Jobs</a>
                 <a href="Apply.html">Apply</a>
                 <a href="About.html">About</a>
+                <a href="login.html">Login</a>
+                <a href="manage.php">Manage</a>
             </nav>
 
              <search>
