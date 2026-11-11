@@ -2,7 +2,7 @@
 <html lang="en">
 <html>
     <head>
-        <link href="../css/style.css" rel = "stylesheet">
+        <link href="styles/style.css" rel = "stylesheet">
         <meta charset="UTF-8">
         <meta name="description" content="Job applications">
         <meta name ="keywords" content="html,form,hyperlinks">
@@ -10,7 +10,7 @@
     </head>
 <body>
     <header>
-    <img src="../image/logo.png" alt="home" width="80px" height="80px"></p>
+    <img src="images/logo.png" alt="home" width="80px" height="80px"></p>
     <h1 class ="Main">DE_HECKETEERS</h1>
     <search>
             <nav>

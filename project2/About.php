@@ -3,7 +3,7 @@
 <html lang="en">
 	
 	<head>
-        <link href="../css/style.css" rel="stylesheet">
+        <link href="styles/style.css" rel="stylesheet">
   		<meta charset="utf-8">
         <meta name="description" content="About us">
         <meta name ="keywords" content="html,images,hyperlinks">
@@ -62,7 +62,7 @@
 
 <section id="group">
 <figure><figcaption>De_Hecketeers</figcaption>
-<img src="Group.png" alt="Group Photo" style="width:40%"></figure>
+<img src="../image/Group.png" alt="Group Photo" style="width:40%"></figure>
 
 </section>
 
@@ -77,7 +77,7 @@
         <dt>Contribution</dt>
         <dd>-CSS,About html,Jira,Github</dd>
         <dt>Quotes</dt>
-        <dd>-没有期望就没有失望（if there is no expectation there will be no dissapointment</dd>
+        <dd>-没有期望就没有失望 if there is no expectation there will be no dissapointment</dd>
 
     <h2>Teh Xuan Bin</h2> 
         <dt>Contribution</dt>

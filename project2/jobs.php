@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Jobs Requirements</title>
 
-        <link href="../css/style.css" rel="stylesheet">
+        <link href="styles/style.css" rel="stylesheet">
         <meta charset="UTF-8">
         <meta name="description" content="Job applications">
         <meta name ="keywords" content="html,form,hyperlinks">
