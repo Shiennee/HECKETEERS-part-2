@@ -16,11 +16,11 @@
             <h1 class ="Main">DE_HECKETEERS</h1>
 
             <nav>
-                <a href="index.html">Home</a>
-                <a href="jobs.html">Jobs</a>
-                <a href="Apply.html">Apply</a>
-                <a href="About.html">About</a>
-                <a href="login.html">Login</a>
+                <a href="index.php">Home</a>
+                <a href="jobs.php">Jobs</a>
+                <a href="Apply.php">Apply</a>
+                <a href="About.php">About</a>
+                <a href="login.php">Login</a>
                 <a href="manage.php">Manage</a>
             </nav>
 
