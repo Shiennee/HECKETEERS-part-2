@@ -3,7 +3,7 @@
 <html lang="en">
 	
 	<head>
-        <link href="css/style.css" rel = "stylesheet">
+        <link href="../css/style.css" rel="stylesheet">
   		<meta charset="utf-8">
         <meta name="description" content="About us">
         <meta name ="keywords" content="html,images,hyperlinks">
@@ -15,26 +15,7 @@
         </style>
        
 	</head>
-<header>
-            
-            <img src="image/logo.png" alt="home" width="80px" height="80px"></p>
-            <h1 class ="Main">DE_HECKETEERS</h1>
-
-            <nav>
-                <a href="index.php">Home</a>
-                <a href="jobs.php">Jobs</a>
-                <a href="Apply.php">Apply</a>
-                <a href="About.php">About</a>
-            </nav>
-
-             <search>
-                <form action="/search" method="get">
-                    <label for="search">Search:</label>
-                    <input type="text" id="search" name="search">
-                    <button type="submit">Search</button>
-                </form>
-            </search>
-        </header>
+    <?php include 'header.inc';?>
 
 
 <h1>About us</h1>

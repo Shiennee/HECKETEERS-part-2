@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <title>Jobs Requirements</title>
 
-        <link href="css/style.css" rel = "stylesheet">
+        <link href="../css/style.css" rel="stylesheet">
         <meta charset="UTF-8">
         <meta name="description" content="Job applications">
         <meta name ="keywords" content="html,form,hyperlinks">
         <meta name ="Lim Ye An" content ="De Hecketeers">
 </head>
-<?php include 'header.php'; ?>
+<?php include 'header.inc'; ?>
 
 <body>
  

@@ -2,7 +2,7 @@
 <html lang="en">
 
     <head>
-        <link href="css/style.css" rel = "stylesheet">
+        <link href="../css/style.css" rel="stylesheet">
         <meta charset="UTF-8">
         <meta name="description" content="Job applications">
         <meta name ="keywords" content="html,form,hyperlinks">
@@ -11,25 +11,7 @@
     </head>
 
     <body>
-        <header>
-           <img src="image/logo.png" alt="home" width="80px" height="80px"></p>
-            <h1 class ="Main">DE_HECKETEERS</h1>
-
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="jobs.html">Jobs</a>
-                <a href="Apply.html">Apply</a>
-                <a href="About.html">About</a>
-            </nav>
-
-             <search>
-                <form action="/search" method="get">
-                    <label for="search">Search:</label>
-                    <input type="text" id="search" name="search">
-                    <button type="submit">Search</button>
-                </form>
-            </search>
-        </header>
+        <?php include 'header.inc';?>
        
         <main>
         <section class="description">
