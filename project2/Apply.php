@@ -7,7 +7,7 @@
 		<meta charset="UTF-8">
         <meta name="description" content="Job applications">
         <meta name ="keywords" content="html,form,hyperlinks">
-        <meta name ="Yee Chee Xuen" content ="De Hecketeers">
+        <meta name ="Yau Chee Xuen" content ="De Hecketeers">
 
   		<title> De Hecketeers apply.html </title>
 		
@@ -116,7 +116,7 @@
 						
 		<p> 
 			<label for="email"> Email Address: </label> 
-			<input type="text" name= "email" id="email" pattern="[A-Za-z0-9@_-]{1,40}" required="required">
+			<input type="email" name= "email" id="email" pattern="[A-Za-z0-9@_-]{1,40}" required="required">
 		</p>
 		
 		<hr>
