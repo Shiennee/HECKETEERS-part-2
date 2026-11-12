@@ -16,6 +16,7 @@
        
 	</head>
     <?php include 'header.inc';?>
+    <?php include 'nav.inc';?>
 
 
 <h1>About us</h1>

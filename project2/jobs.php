@@ -11,7 +11,7 @@
         <meta name ="Lim Ye An" content ="De Hecketeers">
 </head>
 <?php include 'header.inc'; ?>
-
+<?php include 'nav.inc';?>
 <body>
  
   <section id="jobs">
