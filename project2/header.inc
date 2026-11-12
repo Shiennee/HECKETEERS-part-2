@@ -18,6 +18,8 @@
                 <a href="jobs.php">Jobs</a>
                 <a href="Apply.php">Apply</a>
                 <a href="About.php">About</a>
+                <a href="login.php">Login/Management</a>
+                
             </nav>
             
             <form action="/search" method="get">

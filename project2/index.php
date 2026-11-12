@@ -17,7 +17,7 @@
         <section class="description">
         <h1>Got de problem,</h1>
          <div class="picture">
-        <img src="image/Drake.png" alt="solving problems" width="400" height="300">
+        <img src="images/Drake.png" alt="solving problems" width="400" height="300">
         </div>
         <h1> Hack de problem!</h1>
         
