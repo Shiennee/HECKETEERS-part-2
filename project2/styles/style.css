@@ -195,4 +195,33 @@ figure {
 #group h2{margin-right: 250px;
 text-align:right;}
 
+header img {
+    transition: filter 0.2s ease, transform 0.2s ease;
+}
+
+header img:hover {
+    filter: drop-shadow(0 7px 8px rgba(13, 63, 36, 0.5));
+    transform: translateY(-3px);
+}
+
+.company-purpose article {
+    background-color: #f0f6ed;
+    border-left: 5px solid #589263;
+    border-radius: 12px;
+    margin: 16px 5%;
+    padding: 16px;
+}
+
+footer {
+    background-color: #12382e;
+    padding: 16px;
+}
+
+footer p {
+    background-color: transparent;
+}
+
+footer a {
+    color: white;
+}
  
