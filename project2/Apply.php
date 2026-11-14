@@ -12,11 +12,10 @@
   		<title> De Hecketeers apply.html </title>
 		
 	</head>
-<?php include 'header.inc';?>
-<?php include 'nav.inc';?>
 
 <body>
-	<?php include 'header.inc';?>	
+	<?php include 'header.inc';?>
+    <?php include 'nav.inc';?>	
 	
 	<section id="signup">
     <h1> De Hacketeers Job Application Form </h1>
