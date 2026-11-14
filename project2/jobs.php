@@ -28,7 +28,8 @@
       <p>Please note your preferred <strong>Job Reference Number</strong> before submitting your details on our application page.</p>                                                                                     
     </aside>
 
-    <Section class="designer">
+    <section class="designer" style="display: flex; justify-content: space-between; align-items: center;">
+    <div>
     <h2>Job1</h2>
 
       <h2>Graphic Designer</h2>
@@ -49,10 +50,12 @@
         <li><strong>Preferable:</strong> Experience in web UI/UX design.</li>
       </ul>
       <br>
+      </div>
       <img src="images/designer.png" alt="Graphic Designer working on visual concepts" style="height: 300px; width: auto; margin: 10px 0;"/>
     </section>
 
-     <section class ="web">
+    <section class="web style="display: flex; justify-content: space-between; align-items: center;">
+    <div>
     <h2>Job2</h2>
    
       <h2>Web Developer</h2>
@@ -73,10 +76,12 @@
         <li><strong>Preferable:</strong> Basic understanding of backend integration.</li>
       </ul>
       <br>
+      </div>
       <img src="images/developer.png" alt="Web Developer coding responsive web pages" style="height: 300px; width: auto; margin: 10px 0;"/>
     </section>
 
-    <section class ="manager">
+    <section class="manager" style="display: flex; justify-content: space-between; align-items: center;">
+    <div>
     <h2>Job3</h2>
     
       <h2>Content Manager</h2>
@@ -97,6 +102,7 @@
         <li><strong>Preferable:</strong> Experience managing digital marketing campaigns.</li>
       </ul>
       <br>
+      </div>
       <img src="images/manager.png" alt="Content Manager analyzing market trends" style="height: 300px; width: auto; margin: 10px 0;"/>
     </section>
 
