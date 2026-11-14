@@ -31,6 +31,7 @@
 
       <h2>Graphic Designer</h2>
       <p><strong>Job Reference Number:</strong> 1GRPH</p>
+      <p><strong>Reports to:</strong> Creative Director</p>
       <p><strong>Salary:</strong> RM3800/m</p>
       <p><strong>Description:</strong> Create digital ads, visual concepts and design that can attract attention.</p>
       
@@ -53,6 +54,7 @@
    
       <h2>Web Developer</h2>
       <p><strong>Job Reference Number:</strong> 2WDEV</p>
+      <p><strong>Reports to:</strong> Lead Software Engineer</p>
       <p><strong>Salary:</strong> RM3200/m + bonuses</p>
       <p><strong>Description:</strong> Build and maintain websites that fulfill the clients request.</p>
       
@@ -75,6 +77,7 @@
     
       <h2>Content Manager</h2>
       <p><strong>Job Reference Number:</strong> 3CONM</p>
+      <p><strong>Reports to:</strong> Marketing Director</p>
       <p><strong>Salary:</strong> RM3500/m</p>
       <p><strong>Description:</strong> To research and gain deep insight into trends and content to create strategy and finale execution.</p>
       
