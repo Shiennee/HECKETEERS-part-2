@@ -49,6 +49,7 @@
         <li><strong>Preferable:</strong> Experience in web UI/UX design.</li>
       </ul>
       <br>
+      <img src="images/designer.png" alt="Graphic Designer working on visual concepts" style="height: 300px; width: auto; margin: 10px 0;"/>
     </section>
 
      <section class ="web">
@@ -72,6 +73,7 @@
         <li><strong>Preferable:</strong> Basic understanding of backend integration.</li>
       </ul>
       <br>
+      <img src="images/developer.png" alt="Web Developer coding responsive web pages" style="height: 300px; width: auto; margin: 10px 0;"/>
     </section>
 
     <section class ="manager">
@@ -95,6 +97,7 @@
         <li><strong>Preferable:</strong> Experience managing digital marketing campaigns.</li>
       </ul>
       <br>
+      <img src="images/manager.png" alt="Content Manager analyzing market trends" style="height: 300px; width: auto; margin: 10px 0;"/>
     </section>
 
 
