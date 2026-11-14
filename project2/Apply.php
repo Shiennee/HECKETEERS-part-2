@@ -12,7 +12,8 @@
   		<title> De Hecketeers apply.html </title>
 		
 	</head>
-
+<?php include 'header.inc';?>
+<?php include 'nav.inc';?>
 
 <body>
 	<?php include 'header.inc';?>	

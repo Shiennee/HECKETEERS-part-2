@@ -12,7 +12,7 @@
 
     <body>
         <?php include 'header.inc';?>
-       
+        <?php include 'nav.inc';?>
         <main>
         <section class="description">
         <h1>Got de problem,</h1>
@@ -94,7 +94,7 @@
     <footer>
         
         <p><a href="https://weprojectcourse.atlassian.net/jira/software/projects/DH/boards/2/backlog?atlOrigin=eyJpIjoiNDFmYzU3YjZhNWE3NDAxMzkzOGFiNTQ1ZTZkNzk5NmUiLCJwIjoiaiJ9">JIRA</a></p>
-        <p><a href="https://github.com/Shiennee/De-Hacketeers-">GITHUB</a></p>
+        <p><a href="https://github.com/Shiennee/HECKETEERS-part-2">GITHUB</a></p>
         <p><a href="mailto:De_Hecketeers@gmail.com">Contact</a></p>
        
     </footer>
