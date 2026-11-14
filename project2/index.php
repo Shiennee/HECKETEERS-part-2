@@ -28,6 +28,18 @@
         </p>
         </section>
 
+        <section class="company-purpose">
+    <article>
+        <h2>Our Vision</h2>
+        <p>To make the web easier to use through thoughtful design and clear content.</p>
+    </article>
+
+    <article>
+        <h2>Our Mission</h2>
+        <p>To build accessible websites, create graphics and digital content, and give new talent a place to develop their skills.</p>
+    </article>
+</section>
+
         <br>
         
 
@@ -82,7 +94,7 @@
     <footer>
         
         <p><a href="https://weprojectcourse.atlassian.net/jira/software/projects/DH/boards/2/backlog?atlOrigin=eyJpIjoiNDFmYzU3YjZhNWE3NDAxMzkzOGFiNTQ1ZTZkNzk5NmUiLCJwIjoiaiJ9">JIRA</a></p>
-        <p><a href="https://github.com/Shiennee/De-Hacketeers-">GITHUB</a></p>
+        <p><a href="https://github.com/Shiennee/HECKETEERS-part-2">GITHUB</a></p>
         <p><a href="mailto:De_Hecketeers@gmail.com">Contact</a></p>
        
     </footer>

@@ -7,7 +7,7 @@
 		<meta charset="UTF-8">
         <meta name="description" content="Job applications">
         <meta name ="keywords" content="html,form,hyperlinks">
-        <meta name ="Yee Chee Xuen" content ="De Hecketeers">
+        <meta name ="author" content ="De Hecketeers">
 
   		<title> De Hecketeers apply.html </title>
 		
@@ -16,84 +16,102 @@
 <?php include 'nav.inc';?>
 
 <body>
+	<?php include 'header.inc';?>	
 	
 	<section id="signup">
-	<h1> De Hacketeers job application form </h1>
-	<form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php" autocomplete="on">
+    <h1> De Hacketeers Job Application Form </h1>
+
+    <form method="POST" action="process_eoi.php" autocomplete="on" novalidate>
 	
 	<p> 
 		Please fill in the De Hacketeers job application form below. 
 		<br> 
 		Our staff will contact you regarding your application as soon as possible in 5 business days. 
 	</p>
-		
-	<label for="JRNum"> Job Reference Number (5 alphanumeric characters) </label> 
-	<input type="text" name= "JRNum" id="JRNum" pattern="[A-Za-z0-9]{5}" required="required"> 
+	<p><span class="required">*</span> Indicates a compulsory field.</p>	
+	<p>
+    	<label for="JRNum">
+        Job Reference Number
+        <span class="required">*</span>
+    	</label>
+
+    	<select name="JRNum" id="JRNum">
+        <option value="">Please select a job</option>
+        <option value="1GRPH">1GRPH</option>
+        <option value="2WDEV">2WDEV</option>
+        <option value="3CONM">3CONM</option>
+    	</select>
+	</p> 
 	
 	<hr>
 	
 	<fieldset>
-	<legend> 1. Personal Details </legend>
-		
-		<p>	
-			<label for="fstname"> First Name: </label> 
-			<input type="text" name="fstname" id="fstname" pattern="[a-zA-Z]{1,20}" required="required">
-		</p>	
-		
-		<p>	
-			<label for="lstname"> Last Name: </label> 
-			<input type="text" name="lstname" id="lstname" pattern="[a-zA-Z]{1,20}" required="required">
-		</p>
-		
-		<hr>
+    <legend>1. Personal Details</legend>
 
-		<p> 
-			<label for="dob"> Date of Birth: </label> 
-			<input type="date" name="dob" id="dob">
-		</p>
-		
-		<hr>
+    <p>
+        <label for="fstname">
+            First Name <span class="required">*</span>
+        </label>
+        <input type="text" name="fstname" id="fstname">
+    </p>
 
-		<p>
-			<span> Gender: </span> 
-			
-			<br>
-			
-			<label for="male"> Male </label>
-			<input type="radio" name="gender" id="male" value="male" required="required">
-			
-			<br>
-			
-			<label for="female"> Female </label>
-			<input type="radio" name="gender" id="female" value="female">
-			
-			<br>
-			
-			<label for="other"> Other </label>
-			<input type="radio" name="gender" id="other" value="other">
-			<label for="gender_specify"> (Please specify): </label> 
-			<input type="text" name="gender" id="gender_specify" pattern="[a-zA-Z]{1,20}">
-		</p>
+    <p>
+        <label for="lstname">
+            Last Name <span class="required">*</span>
+        </label>
+        <input type="text" name="lstname" id="lstname">
+    </p>
+
+    <p>
+        <label for="dob">
+            Date of Birth <span class="required">*</span>
+        </label>
+        <input type="date" name="dob" id="dob">
+    </p>
+
+    <p>
+        <span>Gender <span class="required">*</span></span>
+
+        <br>
+
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male" value="male">
+
+        <br>
+
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female" value="female">
+
+        <br>
+
+        <label for="other">Other</label>
+        <input type="radio" name="gender" id="other" value="other">
+
+        <br>
+
+        <label for="gender_specify">Please specify:</label>
+        <input type="text" name="gender_other" id="gender_specify">
+    </p>
 	</fieldset>
 		
 	<fieldset>
 	<legend> 2. Accomodation Details </legend>
 			
 		<p>
-			<label for="address"> Street Address: </label> 
-			<input type="text" name= "address" id="address" pattern="[A-Za-z0-9]{1,40}" required="required">
+			<label for="address"> Street Address: <span class="required">*</span></label> 
+			<input type="text" name= "address" id="address" >
 		</p>
 		
 		<p>	
-			<label for="suburbtown"> Suburb/Town: </label> 
-			<input type="text" name= "suburbtown" id="suburbtown" pattern="[A-Za-z0-9]{1,40}" required="required">
+			<label for="suburbtown"> Suburb/Town: <span class="required">*</span></label> 
+			<input type="text" name= "suburbtown" id="suburbtown" >
 		</p>
 		
 		<hr>
 
 		<p> 
-			<label for="state"> State of Residence: </label> 
-			<select name="state" id="state" required="required">
+			<label for="state"> State of Residence: <span class="required">*</span></label> 
+			<select name="state" id="state" >
 				<option value=""> Please Select a State </option>
 				<option value="vic"> Victoria (VIC) </option>			
 				<option value="nsw"> New South Wales (NSW) </option>
@@ -107,8 +125,8 @@
 		</p>
 
 		<p>
-			<label for="postcode"> Postcode (5 numbers only): </label> 
-			<input type="text" name= "postcode" id="postcode" pattern="\d{5}" required="required"> 
+			<label for="postcode"> Postcode (4 numbers only): <span class="required">*</span></label> 
+			<input type="text" name= "postcode" id="postcode" > 
 		</p>
 	</fieldset>
 
@@ -116,58 +134,66 @@
 	<legend> 3. Your Contact Info </legend>
 						
 		<p> 
-			<label for="email"> Email Address: </label> 
-			<input type="text" name= "email" id="email" pattern="[A-Za-z0-9@_-]{1,40}" required="required">
+			<label for="email"> Email Address: <span class="required">*</span></label> 
+			<input type="email" name= "email" id="email" >
 		</p>
 		
 		<hr>
 
 		<p>
-			<label for="phone"> Phone Number: </label> 
-			<input type="text" name= "phone" id="phone" pattern="[0-9]{8,12}" required="required"> 
+			<label for="phone"> Phone Number: <span class="required">*</span></label> 
+			<input type="text" name= "phone" id="phone" > 
 		</p>
 
 	</fieldset>
 		
 	<fieldset>
-	<legend> 4. Skill Description </legend>
+    <legend>4. Skill Description</legend>
 
-		<p>
-			<span> Skill List (Check on Your Skills): </span>
-			
-			<br>
-			
-			<label for="skill1"> Creative directing </label> 
-			<input type="checkbox" id="skill1" name="slist" value="skill1" checked="checked" required="required">
-			
-			<br>
-			
-			<label for="skill2"> Accounting </label> 
-			<input type="checkbox" id="skill2" name="slist" value="skill2">
-			
-			<br>
-			
-			<label for="skill3"> Content managing </label> 
-			<input type="checkbox" id="skill3" name="slist" value="skill3">
-			
-			<br>
-			
-			<label for="skill4"> Videographing </label> 
-			<input type="checkbox" id="skill4" name="slist" value="skill4">
-			
-			<br>
-			
-			<label for="skill5"> Video editing/Motion designing </label> 
-			<input type="checkbox" id="skill5" name="slist" value="skill5">
-		</p>
+    <p>
+        <span>Skill List <span class="required">*</span></span>
 
-		<p>
-			<label for="oskills"> Other Skills: </label>
-			<br>
-			<textarea id="oskills" name="oskills" rows="5" cols="50"> Describe some of your other skills here...
-			</textarea>
-		</p>
+        <br>
 
+        <label for="skill1">Creative directing</label>
+        <input type="checkbox" id="skill1"
+               name="slist[]" value="skill1">
+
+        <br>
+
+        <label for="skill2">Accounting</label>
+        <input type="checkbox" id="skill2"
+               name="slist[]" value="skill2">
+
+        <br>
+
+        <label for="skill3">Content managing</label>
+        <input type="checkbox" id="skill3"
+               name="slist[]" value="skill3">
+
+        <br>
+
+        <label for="skill4">Videographing</label>
+        <input type="checkbox" id="skill4"
+               name="slist[]" value="skill4">
+
+        <br>
+
+        <label for="skill5">
+            Video editing/Motion designing
+        </label>
+        <input type="checkbox" id="skill5"
+               name="slist[]" value="skill5">
+    </p>
+
+    <p>
+        <label for="oskills">Other Skills:</label>
+        <br>
+
+        <textarea id="oskills" name="oskills"
+                  rows="5" cols="50"
+                  placeholder="Describe some of your other skills here..."></textarea>
+    </p>
 	</fieldset>
 
 		
@@ -178,7 +204,7 @@
 	<input type= "reset" value="Reset Form Contents">
 
 </form>
-</Section>
+</section>
 </body>
 
 </html>
