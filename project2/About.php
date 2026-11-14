@@ -62,7 +62,7 @@
 
 <section id="group">
 <figure><figcaption>De_Hecketeers</figcaption>
-<img src="../image/Group.png" alt="Group Photo" style="width:40%"></figure>
+<img src="images/Group.png" alt="Group Photo" style="width:40%"></figure>
 
 </section>
 

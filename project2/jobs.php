@@ -19,7 +19,7 @@
     <h2>Jobs requirements and opportunities are listed below. Please review the available positions and apply if you meet the qualifications.</h2>
 
 
-<img src="discussion.png" alt="Join Our Team" style="height: 220px;width:auto;margin: 10px;"/>
+<img src="images/discussion.png" alt="Join Our Team" style="height: 220px;width:auto;margin: 10px;"/>
 
     <aside>
       <h2>Salary Disclaimer</h2>
