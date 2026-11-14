@@ -54,7 +54,7 @@
       <img src="images/designer.png" alt="Graphic Designer working on visual concepts" style="height: 300px; width: auto; margin: 10px 0;"/>
     </section>
 
-    <section class="web style="display: flex; justify-content: space-between; align-items: center;">
+    <section class="web style="display: flex !important; justify-content: space-between; align-items: center;">
     <div>
     <h2>Job2</h2>
    
