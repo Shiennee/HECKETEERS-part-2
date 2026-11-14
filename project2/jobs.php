@@ -107,7 +107,7 @@
       <li>18 days of paid annual leave.</li>
       <li>Performance-based bonuses.</li>
     </ul>
-
+  <p><small><strong>Acknowledgments:</strong> Job role descriptions and content were developed with the assistance of AI and adapted from standard industry templates.</small></p>
   </Section>
 </main>
 </body>
