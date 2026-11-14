@@ -1,18 +1,29 @@
 <?php
 require_once("settings.php");
-
-
 $conn = @mysqli_connect($host, $user, $pwd, $sql_db);
 
-if (!$conn) {
-    echo "<p>Database connection failure.</p>";
-} else {
-    
+if ($conn) {
     $query = "SELECT * FROM jobs";
     $result = mysqli_query($conn, $query);
+
+    if ($result) {
+        while ($row = mysqli_fetch_assoc($result)) {
+            echo "<section class='job-item'>";
+            echo "<h2>" . htmlspecialchars($row['job_title']) . "</h2>";
+            echo "<p><strong>Job Reference Number:</strong> " . htmlspecialchars($row['job_ref']) . "</p>";
+            echo "<p><strong>Reports to:</strong> " . htmlspecialchars($row['reports_to']) . "</p>";
+            echo "<p><strong>Salary:</strong> " . htmlspecialchars($row['salary']) . "</p>";
+            echo "<p><strong>Description:</strong> " . htmlspecialchars($row['description']) . "</p>";
+            echo "</section>";
+            echo "<hr>";
+        }
+        mysqli_free_result($result);
+    }
+    mysqli_close($conn);
+} else {
+    echo "<p>Database connection failure.</p>";
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
