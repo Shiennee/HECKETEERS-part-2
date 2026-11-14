@@ -28,6 +28,18 @@
         </p>
         </section>
 
+        <section class="company-purpose">
+    <article>
+        <h2>Our Vision</h2>
+        <p>To make the web easier to use through thoughtful design and clear content.</p>
+    </article>
+
+    <article>
+        <h2>Our Mission</h2>
+        <p>To build accessible websites, create graphics and digital content, and give new talent a place to develop their skills.</p>
+    </article>
+</section>
+
         <br>
         
 
