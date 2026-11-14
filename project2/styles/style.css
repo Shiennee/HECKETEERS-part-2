@@ -14,10 +14,10 @@ p{
     font-family: 'Times New Roman', Times, serif;
     color:black;}
 
-header {background-color:#f8f8f8;
-    
-        height:80px;
-        position:relative;}
+header {
+    background-color: #f8f8f8;
+    display: flow-root;
+}
 
 header h1 
 {   color:#589263;
@@ -36,10 +36,9 @@ header h1:hover{
 header img {float:left}
 
 header search {
-    position: absolute;
-    left:50%;
-    top:-10px;
-    transform:translate(-50%);}
+    display: block;
+    clear: both;
+}
 
 nav {float:right; margin: bottom;padding-top: 2em;}
 
