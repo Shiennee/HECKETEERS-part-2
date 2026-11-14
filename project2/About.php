@@ -29,6 +29,7 @@ if (!$result) {
         </style>
        
 	</head>
+<body>
     <?php include 'header.inc';?>
     <?php include 'nav.inc';?>
 
@@ -51,10 +52,10 @@ if (!$result) {
         </thead>
         <tr>
         <td>Likes to drink</td>
-        <td>H2O </td>
-        <td>matcha</td>
-        <td>chinese tea</td>
-        <td>ice lemon tea</td>
+        <td>H2O💧</td>
+        <td>matcha🍵</td>
+        <td>chinese tea🫖</td>
+        <td>ice lemon tea🍹</td>
         </tr>
         <tr>
         <td></td>
@@ -140,6 +141,7 @@ if (!$result) {
     </tr>
     <?php 
         while ($row = mysqli_fetch_assoc($result)) {
+            echo "<tr>";
             echo "<td>" . htmlspecialchars($row['member_name']) . "</td>";
             echo "<td>" . htmlspecialchars($row['project1_contribution']) . "</td>";
             echo "<td>" . htmlspecialchars($row['project2_contribution']) . "</td>";
@@ -147,4 +149,5 @@ if (!$result) {
         }
     ?>
 </table>
+</body>
 </html>
