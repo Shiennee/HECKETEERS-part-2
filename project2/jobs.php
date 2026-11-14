@@ -1,3 +1,18 @@
+<?php
+require_once("settings.php");
+
+
+$conn = @mysqli_connect($host, $user, $pwd, $sql_db);
+
+if (!$conn) {
+    echo "<p>Database connection failure.</p>";
+} else {
+    
+    $query = "SELECT * FROM jobs";
+    $result = mysqli_query($conn, $query);
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
