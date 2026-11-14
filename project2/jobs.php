@@ -23,7 +23,7 @@
 
     <aside>
       <h2>Salary Disclaimer</h2>
-      <p>All salary offered is based on current market prices, though still negotiable.</p
+      <p>All salary offered is based on current market prices, though still negotiable.</p>
       <h2>Application Guide</h2>
       <p>Please note your preferred <strong>Job Reference Number</strong> before submitting your details on our application page.</p>                                                                                     
     </aside>
