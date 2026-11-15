@@ -31,8 +31,6 @@ if (!$result) {
 	</head>
 <body>
     <?php include 'header.inc';?>
-    <?php include 'nav.inc';?>
-
 
 <h1>About us</h1>
 <section id="About">
@@ -108,27 +106,18 @@ if (!$result) {
 <dl>
         
     <h2>Yau Chee Xuen</h2> 
-        <dt>Contribution</dt>
-        <dd>-Form,Documentation,all rounder</dd>
         <dt>Quotes</dt>
-        <dd>-牛逼了，兄弟 (no way, bro)</dd>
+        <dd>-' 牛逼了，兄弟 ' (no way, bro)</dd>
     <h2>Lim Shien Nee</h2> 
-        <dt>Contribution</dt>
-        <dd>-CSS,About html,Jira,Github</dd>
         <dt>Quotes</dt>
-        <dd>-没有期望就没有失望 </dd>
+        <dd>' 没有期望就没有失望 '</dd>
         <dd>if there is no expectation there will be no dissapointment </dd>
-
     <h2>Teh Xuan Bin</h2> 
-        <dt>Contribution</dt>
-        <dd>-All rounder</dd>
         <dt>Quotes</dt>
-        <dd>-GGWP (well played)</dd>
+        <dd>-'GGWP' (well played)</dd>
     <h2>Lim Ye An </h2> 
-        <dt>Contribution</dt>
-        <dd>-All rounder</dd>
         <dt>Quotes</dt>
-        <dd>-Patience is key</dd>
+        <dd>-'Patience is key'</dd>
 
 </dl>
 </ul>
