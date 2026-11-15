@@ -68,7 +68,6 @@ $allowedTabs = [
     'search',
     'delete',
     'update',
-    'sort'
 ];
 
 if (!in_array($tab, $allowedTabs, true)) { //validate tabs
@@ -92,7 +91,6 @@ if (!in_array($tab, $allowedTabs, true)) { //validate tabs
         <a href="manage.php?tab=search"> Search </a>
         <a href="manage.php?tab=delete"> Delete </a>
         <a href="manage.php?tab=update"> Status Update </a>
-        <a href="manage.php?tab=sort"> Sort </a>
     </nav>
 
     <hr>
@@ -101,9 +99,29 @@ if (!in_array($tab, $allowedTabs, true)) { //validate tabs
     <?php
     
     if ($tab === 'all') { //get all EOI 
-    $sql = "SELECT * FROM eoi ORDER BY EOInumber ASC";
+    $sortFields = [
+    'number' => 'EOInumber',
+    'job'    => 'JRNum',
+    'last'   => 'lstname',
+    'status' => 'status',
+    ];
+
+    $sort = $_GET['sort'] ?? 'number';
+    $column = is_string($sort) ? ($sortFields[$sort] ?? 'EOInumber') : 'EOInumber';
+    $sql = "SELECT * FROM eoi ORDER BY $column ASC";
     $result = $connect->query($sql);
     echo "<h2>All Expression of Interest Records</h2>";
+    echo '<form method="get" action="manage.php">
+    <input type="hidden" name="tab" value="all">
+    <label for="sort">Sort by</label>
+    <select name="sort" id="sort">
+    <option value="number">EOI Number</option>
+    <option value="job">Job Reference</option>
+    <option value="last">Last Name</option>
+    <option value="status">Status</option>
+    </select>
+    <button type="submit">Sort</button>
+    </form>';
     if (!$result) {
     echo "<p>Unable to retrieve EOI records.</p>";
     }
@@ -287,7 +305,6 @@ if (!in_array($tab, $allowedTabs, true)) { //validate tabs
     } 
     
     elseif ($tab === 'update') { } //update status (add code in bracket here)
-    elseif ($tab === 'sort') { } //sorting (add code in bracket here)
     
     ?>
     
