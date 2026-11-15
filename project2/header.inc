@@ -1,7 +1,6 @@
     <header>
     <img src="images/logo.png" alt="home" width="80" height="80">
     <h1 class ="Main">DE_HECKETEERS</h1>
-    <div class="header-row">
     <search>
           
                 
