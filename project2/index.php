@@ -14,11 +14,11 @@
         <?php include 'header.inc';?>
         <main>
         <section class="description">
-        <h1>Got de problem,</h1>
+        <h1>Diverse with thoughts,</h1>
          <div class="picture">
         <img src="images/Drake.png" alt="solving problems" width="400" height="300">
         </div>
-        <h1> Hack de problem!</h1>
+        <h1> creating your aspirations. </h1>
         
         <h2>
             We are a passionate group of young aspiring web developers hoping to sharpen our brand promotion skills on the vast cyberspace.

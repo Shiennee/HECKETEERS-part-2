@@ -37,7 +37,7 @@ if (!$result) {
 
 
         <h2>Company policy:</h2>
-        <h3>we do not discriminate race, gender … including Aboriginal & Torres Strait Islanders !!!!</h3>
+        <h3>We do not discriminate against different genders, ages, minorities of race, and indigenous people, including Aboriginal & Torres Strait Islanders! </h3>
         
         <table>
         <caption>FUN FACTS </caption>
@@ -56,21 +56,21 @@ if (!$result) {
         <td>ice lemon tea🍹</td>
         </tr>
         <tr>
-        <td></td>
+        <td>Random fact #1</td>
         <td>powered by chocolate🍫, fueled by cheese🧀</td>
         <td>i want a snake python</td>
         <td>Born in highland, but scared of cold</td>
         <td>Food is the source of happiness</td>
         </tr>
         <tr>
-        <td></td>
+        <td>Random fact #2</td>
         <td>immune to coffee and tea</td>
         <td>🎵matcha is your best of friends🎵</td>
         <td>Loves ice cream</td>
         <td>Low battery mode by default</td>
         </tr>
         <tr>
-        <td></td>
+        <td>Random fact #3</td>
         <td>prefers “terrible” jokes</td> 
         <td>procrastination my greatest enemy</td>
         <td>Keep beetle as pets but scared of cockroaches 🪳</td>
@@ -84,13 +84,13 @@ if (!$result) {
         <li>De hecketeers</li>
     </ul>
 
-    <li><h2>Class day</h2></li>
+    <li><h2>Class days</h2></li>
     <ul>
         <li>Monday </li>
         <li>Thursday</li>
     </ul>
 
-    <li><h2>time</h2></li>
+    <li><h2>Timetable</h2></li>
     <ul>
         <li>16:00-18:00</li>
         <li>14:00-16:00</li>
@@ -107,14 +107,14 @@ if (!$result) {
         
     <h2>Yau Chee Xuen</h2> 
         <dt>Quotes</dt>
-        <dd>-' 牛逼了，兄弟 ' (no way, bro)</dd>
+        <dd>- ' 牛逼了，兄弟 ' (no way, bro)</dd>
     <h2>Lim Shien Nee</h2> 
         <dt>Quotes</dt>
-        <dd>' 没有期望就没有失望 '</dd>
+        <dd>- ' 没有期望就没有失望 '</dd>
         <dd>if there is no expectation there will be no dissapointment </dd>
     <h2>Teh Xuan Bin</h2> 
         <dt>Quotes</dt>
-        <dd>-'GGWP' (well played)</dd>
+        <dd>- 'GGWP' (well played)</dd>
     <h2>Lim Ye An </h2> 
         <dt>Quotes</dt>
         <dd>-'Patience is key'</dd>
