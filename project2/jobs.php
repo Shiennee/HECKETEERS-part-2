@@ -23,7 +23,9 @@
       <h2>Reference </h2>
       <p><a href="https://www.youtube.com/watch?v=5L9UhOnuos0">Dave Hollingworth</a></p>
       <p><a href="https://www.w3schools.com/sql/default.asp">W3school</a></p>
-      <p>Acknowledgments: Job role descriptions and content were developed with the assistance of AI and adapted from standard industry templates.</p>
+      <h2>Acknowledgment</h2>
+      <p>Job role descriptions and content were developed with the assistance of AI and adapted from standard industry templates.</p>
+      <p>Ai was use to provide reference for learning .</p>
         
 
       <h2>Application Guide</h2>
