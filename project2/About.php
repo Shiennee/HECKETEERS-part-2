@@ -59,23 +59,24 @@ if (!$result) {
         </tr>
         <tr>
         <td></td>
-        <td>powered by chocolate, fueled by cheese</td>
+        <td>powered by chocolate🍫, fueled by cheese🧀</td>
         <td>i want a snake python</td>
         <td>Born in highland, but scared of cold</td>
+        <td>Food is the source of happiness</td>
         </tr>
         <tr>
         <td></td>
         <td>immune to coffee and tea</td>
         <td>🎵matcha is your best of friends🎵</td>
-        <td>Keep beetle as pets but scared of cockroaches 🪳</td>
+        <td>Loves ice cream</td>
         <td>patients is the key of truth life</td>
         </tr>
         <tr>
         <td></td>
         <td>prefers “terrible” jokes</td> 
-        <td></td>
-        <td>Loves ice cream</td>
-        <td>Imagine getting poisoned from drinking water</td>
+        <td>drawing a 100 art is better than programming a 100 lines of code</td>
+        <td>Keep beetle as pets but scared of cockroaches 🪳</td>
+        <td>Can calculate Mahjong tiles faster than math🀄</td>
 
     </table>
 
