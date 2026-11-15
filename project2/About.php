@@ -123,7 +123,7 @@ if (!$result) {
 </ul>
 
 </section>
-<h2>Group members contributions</h2>
+<h2 class="contributions">Group members contributions</h2>
 <table>
     <tr>
         <th>Member name</th>
