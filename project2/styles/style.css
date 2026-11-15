@@ -236,4 +236,11 @@ footer p {
 footer a {
     color: white;
 }
+table {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+.contributions {
+    text-align: center;
+}
  
