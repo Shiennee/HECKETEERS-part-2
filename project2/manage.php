@@ -304,7 +304,48 @@ if (!in_array($tab, $allowedTabs, true)) { //validate tabs
     }
     } 
     
-    elseif ($tab === 'update') { } //update status (add code in bracket here)
+    elseif ($tab === 'update') { //update status (add code in bracket here)
+    $statuses = ['New', 'Current', 'Final'];
+
+    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+        $token = $_POST['csrf_token'] ?? '';
+        $number = filter_var($_POST['eoi_number'] ?? '', FILTER_VALIDATE_INT);
+        $status = $_POST['status'] ?? '';
+
+        if (!is_string($token) || !hash_equals($_SESSION['csrf_token'], $token)) {
+            echo '<p>Invalid request. Reload the page and try again.</p>';
+        } elseif ($number === false || $number < 1 || !in_array($status, $statuses, true)) {
+            echo '<p>Enter a valid EOI number and status.</p>';
+        } else {
+            $stmt = $connect->prepare('UPDATE eoi SET status = ? WHERE EOInumber = ?');
+            if ($stmt && $stmt->bind_param('si', $status, $number) && $stmt->execute()) {
+                echo $stmt->affected_rows > 0
+                    ? '<p>Status updated.</p>'
+                    : '<p>No change. Check the EOI number or current status.</p>';
+            } else {
+                echo '<p>Could not update the status.</p>';
+            }
+        }
+    }
+    ?>
+    <form method="post" action="manage.php?tab=update">
+        <input type="hidden" name="csrf_token"
+               value="<?= htmlspecialchars($_SESSION['csrf_token'], ENT_QUOTES, 'UTF-8') ?>">
+
+        <label for="eoi_number">EOI Number</label>
+        <input type="number" id="eoi_number" name="eoi_number" min="1" required>
+
+        <label for="status">New status</label>
+        <select id="status" name="status">
+            <?php foreach ($statuses as $option) { ?>
+                <option><?= $option ?></option>
+            <?php } ?>
+        </select>
+
+        <button type="submit">Update status</button>
+    </form>
+    <?php
+}
     
     ?>
     
