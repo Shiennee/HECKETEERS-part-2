@@ -256,6 +256,7 @@ if (empty($errors)) {
 <body>
 
 <?php include 'header.inc'; ?>
+<?php include 'nav.inc';?>
 
 <section id="signup">
 
