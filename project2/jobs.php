@@ -14,6 +14,7 @@ if ($conn) {
             echo "<p><strong>Reports to:</strong> " . htmlspecialchars($row['reports_to']) . "</p>";
             echo "<p><strong>Salary:</strong> " . htmlspecialchars($row['salary']) . "</p>";
             echo "<p><strong>Description:</strong> " . htmlspecialchars($row['description']) . "</p>";
+            echo "<h3>Key Responsibilities:</h3>";
             echo "<p>" . nl2br(htmlspecialchars($row['responsibilities'])) . "</p>";
             echo "<h3>Requirements:</h3>";
             echo "<ul>";
