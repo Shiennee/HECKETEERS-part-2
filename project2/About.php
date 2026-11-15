@@ -31,8 +31,6 @@ if (!$result) {
 	</head>
 <body>
     <?php include 'header.inc';?>
-    <?php include 'nav.inc';?>
-
 
 <h1>About us</h1>
 <section id="About">
@@ -59,22 +57,24 @@ if (!$result) {
         </tr>
         <tr>
         <td></td>
-        <td>powered by chocolate, fueled by cheese</td>
-        <td>may i have a snake python please?</td>
+        <td>powered by chocolate🍫, fueled by cheese🧀</td>
+        <td>i want a snake python</td>
+        <td>Born in highland, but scared of cold</td>
+        <td>Food is the source of happiness</td>
         </tr>
         <tr>
         <td></td>
         <td>immune to coffee and tea</td>
         <td>🎵matcha is your best of friends🎵</td>
-        <td></td>
-        <td>patients is the key of truth life</td>
+        <td>Loves ice cream</td>
+        <td>Low battery mode by default</td>
         </tr>
         <tr>
         <td></td>
         <td>prefers “terrible” jokes</td> 
-        <td>if you can reach the sky ,you can also be 6 feat under</td>
-        <td></td>
-        <td>Imagine getting poisoned from drinking water</td>
+        <td>drawing a 100 art is better than programming a 100 lines of code</td>
+        <td>Keep beetle as pets but scared of cockroaches 🪳</td>
+        <td>Can calculate Mahjong tiles faster than math🀄</td>
 
     </table>
 
@@ -106,27 +106,18 @@ if (!$result) {
 <dl>
         
     <h2>Yau Chee Xuen</h2> 
-        <dt>Contribution</dt>
-        <dd>-Form,Documentation,all rounder</dd>
         <dt>Quotes</dt>
-        <dd>-牛逼了，兄弟 (no way, bro)</dd>
+        <dd>-' 牛逼了，兄弟 ' (no way, bro)</dd>
     <h2>Lim Shien Nee</h2> 
-        <dt>Contribution</dt>
-        <dd>-CSS,About html,Jira,Github</dd>
         <dt>Quotes</dt>
-        <dd>-没有期望就没有失望 </dd>
+        <dd>' 没有期望就没有失望 '</dd>
         <dd>if there is no expectation there will be no dissapointment </dd>
-
     <h2>Teh Xuan Bin</h2> 
-        <dt>Contribution</dt>
-        <dd>-All rounder</dd>
         <dt>Quotes</dt>
-        <dd>-GGWP (well played)</dd>
+        <dd>-'GGWP' (well played)</dd>
     <h2>Lim Ye An </h2> 
-        <dt>Contribution</dt>
-        <dd>-All rounder</dd>
         <dt>Quotes</dt>
-        <dd>-Patience is key</dd>
+        <dd>-'Patience is key'</dd>
 
 </dl>
 </ul>

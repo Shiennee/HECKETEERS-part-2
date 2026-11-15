@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $connect= new mysqli($host, $user, $pwd, $sql_db);
 
         $stmt = $connect->prepare(
-            'SELECT id, password_hash FROM hr_users WHERE username = ?'
+            'SELECT id, password_hash FROM login WHERE username = ?'
         );
         $stmt->bind_param('s', $username);
         $stmt->execute();
@@ -33,13 +33,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>HR Manager Login</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://classless.de/classless.css">
 </head>
 <body>
     <h1>HR Manager Login</h1>
