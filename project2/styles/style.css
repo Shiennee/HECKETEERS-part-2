@@ -280,4 +280,6 @@ table {
 
 .login-page {
     background-color: #eaf4ef;
+    max-width: none;
+    min-height: 100vh;
 }
