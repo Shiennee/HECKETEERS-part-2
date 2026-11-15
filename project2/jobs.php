@@ -20,8 +20,12 @@
 <img src="images/discussion.png" alt="Join Our Team" style="height: 220px;width:auto;margin: 10px;"/>
 
     <aside>
-      <h2>Salary Disclaimer</h2>
-      <p>All salary offered is based on current market prices, though still negotiable.</p>
+      <h2>Reference </h2>
+      <p><a href="https://www.youtube.com/watch?v=5L9UhOnuos0">Dave Hollingworth</a></p>
+      <p><a href="https://www.w3schools.com/sql/default.asp">W3school</a></p>
+      <p>Acknowledgments: Job role descriptions and content were developed with the assistance of AI and adapted from standard industry templates.</p>
+        
+
       <h2>Application Guide</h2>
       <p>Please note your preferred <strong>Job Reference Number</strong> before submitting your details on our application page.</p>                                                                                     
     </aside>
@@ -119,7 +123,6 @@ if ($conn) {
       <li>18 days of paid annual leave.</li>
       <li>Performance-based bonuses.</li>
     </ul>
-  <p><small><strong>Acknowledgments:</strong> Job role descriptions and content were developed with the assistance of AI and adapted from standard industry templates.</small></p>
   </Section>
     </body>
 
