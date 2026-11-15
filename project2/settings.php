@@ -9,7 +9,7 @@ $sql_db = "project2";  // replace with the actual name of your database
 $connect = new mysqli($host, $user, $pwd, $sql_db); //connect to proj2 db
 
 
-if ($conn->connect_error) {
+if ($connect->connect_error) {
     die("Database connection failed."); //error msg if fail
 }
 
