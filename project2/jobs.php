@@ -1,3 +1,29 @@
+<?php
+require_once("settings.php");
+$conn = @mysqli_connect($host, $user, $pwd, $sql_db);
+
+if ($conn) {
+    $query = "SELECT * FROM jobs";
+    $result = mysqli_query($conn, $query);
+
+    if ($result) {
+        while ($row = mysqli_fetch_assoc($result)) {
+            echo "<section class='job-item'>";
+            echo "<h2>" . htmlspecialchars($row['job_title']) . "</h2>";
+            echo "<p><strong>Job Reference Number:</strong> " . htmlspecialchars($row['job_ref']) . "</p>";
+            echo "<p><strong>Reports to:</strong> " . htmlspecialchars($row['reports_to']) . "</p>";
+            echo "<p><strong>Salary:</strong> " . htmlspecialchars($row['salary']) . "</p>";
+            echo "<p><strong>Description:</strong> " . htmlspecialchars($row['description']) . "</p>";
+            echo "</section>";
+            echo "<hr>";
+        }
+        mysqli_free_result($result);
+    }
+    mysqli_close($conn);
+} else {
+    echo "<p>Database connection failure.</p>";
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +37,7 @@
         <meta name ="Lim Ye An" content ="De Hecketeers">
 </head>
 <?php include 'header.inc'; ?>
-
+<?php include 'nav.inc';?>
 <body>
  
   <section id="jobs">
@@ -19,18 +45,22 @@
     <h2>Jobs requirements and opportunities are listed below. Please review the available positions and apply if you meet the qualifications.</h2>
 
 
-<img src="discussion.png" alt="Join Our Team" style="height: 220px;width:auto;margin: 10px;"/>
+<img src="images/discussion.png" alt="Join Our Team" style="height: 220px;width:auto;margin: 10px;"/>
 
     <aside>
       <h2>Salary Disclaimer</h2>
       <p>All salary offered is based on current market prices, though still negotiable.</p>
+      <h2>Application Guide</h2>
+      <p>Please note your preferred <strong>Job Reference Number</strong> before submitting your details on our application page.</p>                                                                                     
     </aside>
 
-    <Section class="designer">
+    <section class="designer" style="display: flex; justify-content: space-between; align-items: center;">
+    <div>
     <h2>Job1</h2>
 
       <h2>Graphic Designer</h2>
       <p><strong>Job Reference Number:</strong> 1GRPH</p>
+      <p><strong>Reports to:</strong> Creative Director</p>
       <p><strong>Salary:</strong> RM3800/m</p>
       <p><strong>Description:</strong> Create digital ads, visual concepts and design that can attract attention.</p>
       
@@ -46,13 +76,17 @@
         <li><strong>Preferable:</strong> Experience in web UI/UX design.</li>
       </ul>
       <br>
+      </div>
+      <img src="images/designer.png" alt="Graphic Designer working on visual concepts" style="height: 300px; width: auto; margin: 10px 0;"/>
     </section>
 
-     <section class ="web">
+    <section class="web" style="display: flex !important; justify-content: space-between; align-items: center;">
+    <div>
     <h2>Job2</h2>
    
       <h2>Web Developer</h2>
       <p><strong>Job Reference Number:</strong> 2WDEV</p>
+      <p><strong>Reports to:</strong> Lead Software Engineer</p>
       <p><strong>Salary:</strong> RM3200/m + bonuses</p>
       <p><strong>Description:</strong> Build and maintain websites that fulfill the clients request.</p>
       
@@ -68,13 +102,17 @@
         <li><strong>Preferable:</strong> Basic understanding of backend integration.</li>
       </ul>
       <br>
+      </div>
+      <img src="images/developer.png" alt="Web Developer coding responsive web pages" style="height: 300px; width: auto; margin: 10px 0;"/>
     </section>
 
-    <section class ="manager">
+    <section class="manager" style="display: flex; justify-content: space-between; align-items: center;">
+    <div>
     <h2>Job3</h2>
     
       <h2>Content Manager</h2>
       <p><strong>Job Reference Number:</strong> 3CONM</p>
+      <p><strong>Reports to:</strong> Marketing Director</p>
       <p><strong>Salary:</strong> RM3500/m</p>
       <p><strong>Description:</strong> To research and gain deep insight into trends and content to create strategy and finale execution.</p>
       
@@ -90,6 +128,8 @@
         <li><strong>Preferable:</strong> Experience managing digital marketing campaigns.</li>
       </ul>
       <br>
+      </div>
+      <img src="images/manager.png" alt="Content Manager analyzing market trends" style="height: 300px; width: auto; margin: 10px 0;"/>
     </section>
 
 
@@ -102,7 +142,7 @@
       <li>18 days of paid annual leave.</li>
       <li>Performance-based bonuses.</li>
     </ul>
-
+  <p><small><strong>Acknowledgments:</strong> Job role descriptions and content were developed with the assistance of AI and adapted from standard industry templates.</small></p>
   </Section>
 </main>
 </body>

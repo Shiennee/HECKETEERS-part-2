@@ -1,4 +1,18 @@
-<!-- group 6 apply.html (job application form) -->
+<?php 
+require_once("settings.php");
+$conn = @mysqli_connect($host, $user, $pwd, $sql_db);
+
+if (!$conn){
+    die("Database connection failure: " . mysqli_connect_error());}
+
+$sql = "SELECT * FROM about";
+$result = mysqli_query($conn, $sql);
+
+if (!$result) {
+    die("Database query failure: " . mysqli_error($conn));
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 	
@@ -15,7 +29,9 @@
         </style>
        
 	</head>
+<body>
     <?php include 'header.inc';?>
+    <?php include 'nav.inc';?>
 
 
 <h1>About us</h1>
@@ -26,19 +42,40 @@
         <h3>we do not discriminate race, gender … including Aboriginal & Torres Strait Islanders !!!!</h3>
         
         <table>
-        <caption>Favourite Drink</caption>
+        <caption>FUN FACTS </caption>
         <thead>
+        <th></th>
         <th>Yau Chee Xuen</th>
         <th>Lim Shien Nee</th>
         <th>Teh Xuan Bin</th>
         <th>Lim Ye An</th>
         </thead>
         <tr>
-        <td>H2O </td>
-        <td>matcha</td>
-        <td>chinese tea</td>
-        <td>ice lemon tea</td>
+        <td>Likes to drink</td>
+        <td>H2O💧</td>
+        <td>matcha🍵</td>
+        <td>chinese tea🫖</td>
+        <td>ice lemon tea🍹</td>
         </tr>
+        <tr>
+        <td></td>
+        <td>powered by chocolate, fueled by cheese</td>
+        <td>may i have a snake python please?</td>
+        </tr>
+        <tr>
+        <td></td>
+        <td>immune to coffee and tea</td>
+        <td>🎵matcha is your best of friends🎵</td>
+        <td></td>
+        <td>patients is the key of truth life</td>
+        </tr>
+        <tr>
+        <td></td>
+        <td>prefers “terrible” jokes</td> 
+        <td>if you can reach the sky ,you can also be 6 feat under</td>
+        <td></td>
+        <td>Imagine getting poisoned from drinking water</td>
+
     </table>
 
 <ul>
@@ -62,11 +99,11 @@
 
 <section id="group">
 <figure><figcaption>De_Hecketeers</figcaption>
-<img src="../image/Group.png" alt="Group Photo" style="width:40%"></figure>
+<img src="images/Group.png" alt="Group Photo" style="width:40%"></figure>
 
 </section>
 
-    <dl>
+<dl>
         
     <h2>Yau Chee Xuen</h2> 
         <dt>Contribution</dt>
@@ -77,7 +114,8 @@
         <dt>Contribution</dt>
         <dd>-CSS,About html,Jira,Github</dd>
         <dt>Quotes</dt>
-        <dd>-没有期望就没有失望 if there is no expectation there will be no dissapointment</dd>
+        <dd>-没有期望就没有失望 </dd>
+        <dd>if there is no expectation there will be no dissapointment </dd>
 
     <h2>Teh Xuan Bin</h2> 
         <dt>Contribution</dt>
@@ -94,4 +132,22 @@
 </ul>
 
 </section>
+<h2>Group members contributions</h2>
+<table>
+    <tr>
+        <th>Member name</th>
+        <th>Project1 Contribution</th>
+        <th>Project2 Contribution</th>
+    </tr>
+    <?php 
+        while ($row = mysqli_fetch_assoc($result)) {
+            echo "<tr>";
+            echo "<td>" . htmlspecialchars($row['member_name']) . "</td>";
+            echo "<td>" . htmlspecialchars($row['project1_contribution']) . "</td>";
+            echo "<td>" . htmlspecialchars($row['project2_contribution']) . "</td>";
+            echo "</tr>";
+        }
+    ?>
+</table>
+</body>
 </html>
