@@ -38,6 +38,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta charset="UTF-8">
     <title>HR Manager Login</title>
     <link rel="stylesheet" href="https://classless.de/classless.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body class="login-page">
     <h1>HR Manager Login</h1>
