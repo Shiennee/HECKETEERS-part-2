@@ -25,6 +25,43 @@ require_once("settings.php");
 if (empty($_SESSION['csrf_token'])) { //generate a CSRF
     $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
 }
+
+
+if (isset($_POST['delete_eoi'])) { //EOI deletion handling
+    if (
+        !isset($_SESSION['csrf_token']) ||
+        !isset($_POST['csrf_token']) ||
+        !hash_equals($_SESSION['csrf_token'], $_POST['csrf_token'])
+    ) {
+        die("Invalid request.");
+    }
+    $jobRef = strtoupper(trim($_POST['JRNum'] ?? '')); //get, clean, and validate job reference
+    if ($jobRef === '') {
+        $deleteMessage = "Please enter a job reference.";
+    } elseif (!preg_match('/^[A-Z0-9]{1,5}$/', $jobRef)) {
+        $deleteMessage = "Invalid job reference format.";
+    } else {
+       
+        $stmt = $connect->prepare(  //preparing query
+            "DELETE FROM eoi WHERE JRNum = ?"
+        );
+        $stmt->bind_param("s", $jobRef);
+        if ($stmt->execute()) {
+            $deletedCount = $stmt->affected_rows;
+            if ($deletedCount > 0) {
+                $deleteMessage = $deletedCount .
+                    " EOI record(s) deleted successfully.";
+            } else {
+                $deleteMessage =
+                    "No EOI records found for this job reference.";
+            }
+        } else {
+            $deleteMessage = "Unable to delete EOI records.";
+        }
+        $stmt->close();
+    }
+}
+
 $tab = $_GET['tab'] ?? 'all'; //get tabs
 $allowedTabs = [
     'all',
@@ -218,12 +255,44 @@ if (!in_array($tab, $allowedTabs, true)) { //validate tabs
         $stmt->close();
     }
     }
-}
-    elseif ($tab === 'delete') { } //delete 
-    elseif ($tab === 'update') { } //update status
-    elseif ($tab === 'sort') { } //sorting 
+    }
+    elseif ($tab === 'delete') { //deleting EOI 
+    echo "<h2>Delete EOI Records</h2>";
+    echo "<p>Enter a job reference to delete all
+          associated EOI records.</p>";
+    echo "<form method='post' action='manage.php?tab=delete'>";
+    echo "<label for='JRNum'>Job Reference:</label>";
+    echo "<input type='text'
+                name='JRNum'
+                id='JRNum'
+                maxlength='5'
+                required>";
+    echo "<input type='hidden'
+                name='csrf_token'
+                value='" . htmlspecialchars($_SESSION['csrf_token'], ENT_QUOTES, 'UTF-8') . "'>";
+                
+    echo "<button type='submit'
+             name='delete_eoi'
+             onclick=\"return confirm(
+                'Are you sure you want to delete all EOIs for this job reference?'
+             );\">
+        Delete
+      </button>";
+    echo "</form>"; 
+    if (isset($deleteMessage)) {
+    echo "<p>" .
+         htmlspecialchars($deleteMessage, ENT_QUOTES, 'UTF-8') .
+         "</p>";
+    }
+    } 
+    
+    elseif ($tab === 'update') { } //update status (add code in bracket here)
+    elseif ($tab === 'sort') { } //sorting (add code in bracket here)
+    
     ?>
+    
     <hr>
+    
     <!--logout button-->
     <form method="post" action="manage.php">
 
