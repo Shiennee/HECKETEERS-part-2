@@ -60,20 +60,21 @@ if (!$result) {
         <tr>
         <td></td>
         <td>powered by chocolate, fueled by cheese</td>
-        <td>may i have a snake python please?</td>
+        <td>i want a snake python</td>
+        <td>Born in highland, but scared of cold</td>
         </tr>
         <tr>
         <td></td>
         <td>immune to coffee and tea</td>
         <td>🎵matcha is your best of friends🎵</td>
-        <td></td>
+        <td>Keep beetle as pets but scared of cockroaches 🪳</td>
         <td>patients is the key of truth life</td>
         </tr>
         <tr>
         <td></td>
         <td>prefers “terrible” jokes</td> 
-        <td>if you can reach the sky ,you can also be 6 feat under</td>
         <td></td>
+        <td>Loves ice cream</td>
         <td>Imagine getting poisoned from drinking water</td>
 
     </table>
