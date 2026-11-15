@@ -31,7 +31,6 @@ $allowedTabs = [
     'search',
     'delete',
     'update',
-    'sort'
 ];
 
 if (!in_array($tab, $allowedTabs, true)) { //validate tabs
@@ -54,18 +53,36 @@ if (!in_array($tab, $allowedTabs, true)) { //validate tabs
         <a href="manage.php?tab=search"> Search </a>
         <a href="manage.php?tab=delete"> Delete </a>
         <a href="manage.php?tab=update"> Status Update </a>
-        <a href="manage.php?tab=sort"> Sort </a>
     </nav>
 
     <hr>
 
+    <form method="get" action="manage.php">
+    <input type="hidden" name="tab" value="all">
+
+    <label for="sort">Sort by</label>
+    <select name="sort" id="sort">
+        <option value="number">EOI Number</option>
+        <option value="status">Status</option>
+    </select>
+
+    <button type="submit">Sort</button>
+</form>
+
     <!--dashboard-->
     <?php
-    if ($tab === 'all') { } //display EOI
+   if ($tab === 'all') {
+    $column = ($_GET['sort'] ?? '') === 'status' ? 'status' : 'EOInumber';
+    $result = $connect->query("SELECT EOInumber, status FROM eoi ORDER BY $column");
+
+    while ($row = $result->fetch_assoc()) {
+        echo (int) $row['EOInumber'] . ' — '
+            . htmlspecialchars($row['status'], ENT_QUOTES, 'UTF-8') . '<br>';
+    }
+}   
     elseif ($tab === 'search') { } //search 
     elseif ($tab === 'delete') { } //delete 
-    elseif ($tab === 'update') { } //update status
-    elseif ($tab === 'sort') { } //sorting 
+    elseif ($tab === 'update') { } //update status 
     ?>
     <hr>
     <!--logout button-->
