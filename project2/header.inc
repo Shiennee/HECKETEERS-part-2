@@ -1,17 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<html>
-    <head>
-        <link href="styles/style.css" rel = "stylesheet">
-        <meta charset="UTF-8">
-        <meta name="description" content="Job applications">
-        <meta name ="keywords" content="html,form,hyperlinks">
-        <title>De Hecketeers</title>
-    </head>
-<body>
     <header>
-    <img src="images/logo.png" alt="home" width="80px" height="80px"></p>
+    <img src="images/logo.png" alt="home" width="80" height="80">
     <h1 class ="Main">DE_HECKETEERS</h1>
+    <div class="header-row">
     <search>
           
                 
@@ -21,6 +11,6 @@
                     <button type="submit">Search</button>
             </form>
     </search>
+        <?php include 'nav.inc'; ?>
+</div>
     </header>
-</body>
-</html>
