@@ -15,8 +15,10 @@ if ($conn) {
             echo "<p><strong>Salary:</strong> " . htmlspecialchars($row['salary']) . "</p>";
             echo "<p><strong>Description:</strong> " . htmlspecialchars($row['description']) . "</p>";
             echo "<h3>Key Responsibilities:</h3>";
-            $formatted_resp = str_replace(" 3.", "<br>3.", htmlspecialchars($row['responsibilities']));
-            echo "<p>" . $formatted_resp . "</p>";
+            $parts = explode(" 2.", htmlspecialchars($row['responsibilities']));
+            echo "<p>1. " . str_replace("1. ", "", $parts[0]) . "</p>";
+            if (isset($parts[1])) {
+            echo "<p>2. " . $parts[1] . "</p>";}
             echo "<h3>Requirements:</h3>";
             echo "<ul>";
             echo "<li><strong>Essential:</strong> " . htmlspecialchars($row['essential_req']) . "</li>";
