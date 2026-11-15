@@ -16,7 +16,6 @@ if ($conn) {
             echo "<p><strong>Salary:</strong> " . htmlspecialchars($row['salary']) . "</p>";
             echo "<p><strong>Description:</strong> " . htmlspecialchars($row['description']) . "</p>";
             echo "<h3>Key Responsibilities:</h3>";
-            echo "<p>" . nl2br(htmlspecialchars($row['responsibilities'])) . "</p>";
             echo "<ul>";
             $resp_lines = explode("\r\n", $row['responsibilities']);
             foreach ($resp_lines as $line) {
