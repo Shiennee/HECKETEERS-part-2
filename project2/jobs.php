@@ -15,7 +15,7 @@ if ($conn) {
             echo "<p><strong>Salary:</strong> " . htmlspecialchars($row['salary']) . "</p>";
             echo "<p><strong>Description:</strong> " . htmlspecialchars($row['description']) . "</p>";
             echo "<h3>Key Responsibilities:</h3>";
-            $formatted_resp = str_replace(" 2.", "<br>2.", htmlspecialchars($row['responsibilities']));
+            $formatted_resp = str_replace(" 3.", "<br>3.", htmlspecialchars($row['responsibilities']));
             echo "<p>" . $formatted_resp . "</p>";
             echo "<h3>Requirements:</h3>";
             echo "<ul>";
