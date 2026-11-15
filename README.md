@@ -1,1 +1,0 @@
-# HECKETEERS-part-2

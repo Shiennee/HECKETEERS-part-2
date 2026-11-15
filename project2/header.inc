@@ -12,9 +12,7 @@
     <header>
     <img src="images/logo.png" alt="home" width="80px" height="80px"></p>
     <h1 class ="Main">DE_HECKETEERS</h1>
-    <search>
-          
-                
+    <search>  
             <form action="/search" method="get">
                     <label for="search">Search:</label>
                     <input type="text" id="search" name="search">
