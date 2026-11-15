@@ -277,3 +277,7 @@ table {
     border-radius: 6px;
     cursor: pointer;
 }
+
+.login-page {
+    background-color: #eaf4ef;
+}
