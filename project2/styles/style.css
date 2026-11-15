@@ -237,22 +237,6 @@ footer a {
     color: white;
 }
 
-.table-container { 
-    overflow-x: auto;
-    width: 100%;
-}
-
-.table-container table {
-    border-collapse: collapse;
-    white-space: nowrap;
-}
-
-.table-container th,
-.table-container td {
-    padding: 10px;
-    border: 1px solid #ccc;
-}
-
 table {
     margin-left: auto !important;
     margin-right: auto !important;
