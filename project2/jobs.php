@@ -7,6 +7,7 @@ if ($conn) {
     $result = mysqli_query($conn, $query);
 
     if ($result) {
+        $job_index = 1;
         while ($row = mysqli_fetch_assoc($result)) {
             echo "<section class='job-item'>";
             echo "<h2>" . htmlspecialchars($row['job_title']) . "</h2>";
@@ -16,6 +17,14 @@ if ($conn) {
             echo "<p><strong>Description:</strong> " . htmlspecialchars($row['description']) . "</p>";
             echo "<h3>Key Responsibilities:</h3>";
             echo "<p>" . nl2br(htmlspecialchars($row['responsibilities'])) . "</p>";
+            echo "<ul>";
+            $resp_lines = explode("\r\n", $row['responsibilities']);
+            foreach ($resp_lines as $line) {
+                if (trim($line) !== "") {
+                    echo "<li>" . htmlspecialchars(trim($line)) . "</li>";
+                }
+            }
+            echo "</ul>";
             echo "<h3>Requirements:</h3>";
             echo "<ul>";
             echo "<li><strong>Essential:</strong> " . htmlspecialchars($row['essential_req']) . "</li>";
