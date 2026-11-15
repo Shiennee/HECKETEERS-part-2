@@ -25,7 +25,7 @@
       <p><a href="https://www.w3schools.com/sql/default.asp">W3school</a></p>
       <h2>Acknowledgment</h2>
       <p>Job role descriptions and content were developed with the assistance of AI and adapted from standard industry templates.</p>
-      <p>Ai was use to provide reference for learning .</p>
+      <p>Ai was use to provide reference for learning</p>
         
 
       <h2>Application Guide</h2>
