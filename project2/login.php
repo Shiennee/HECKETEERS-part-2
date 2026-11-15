@@ -39,7 +39,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <title>HR Manager Login</title>
     <link rel="stylesheet" href="https://classless.de/classless.css">
 </head>
-<body>
+<body class="login-page">
     <h1>HR Manager Login</h1>
     <?php if ($error !== ''): ?>
         <p role="alert">

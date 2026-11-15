@@ -244,3 +244,36 @@ table {
     text-align: center;
 }
  
+.login-page form {
+    width: 90%;
+    max-width: 380px;
+    box-sizing: border-box;
+    margin: 24px auto;
+    padding: 24px;
+    background: white;
+    border-top: 4px solid #12382e;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px #0002;
+}
+
+.login-page form p {
+    margin: 0 0 16px;
+}
+
+.login-page input {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 6px;
+    padding: 8px;
+}
+
+.login-page button {
+    width: 100%;
+    padding: 10px;
+    background: #12382e;
+    color: white;
+    border: 0;
+    border-radius: 6px;
+    cursor: pointer;
+}
