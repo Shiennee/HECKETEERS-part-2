@@ -72,7 +72,7 @@ if (!$result) {
         <tr>
         <td></td>
         <td>prefers “terrible” jokes</td> 
-        <td>drawing a 100 art is better than programming a 100 lines of code</td>
+        <td>procrastination my greatest enemy</td>
         <td>Keep beetle as pets but scared of cockroaches 🪳</td>
         <td>Can calculate Mahjong tiles faster than math🀄</td>
 
