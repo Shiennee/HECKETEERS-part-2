@@ -1,24 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<html>
-    <head>
-        <link href="styles/style.css" rel = "stylesheet">
-        <meta charset="UTF-8">
-        <meta name="description" content="Job applications">
-        <meta name ="keywords" content="html,form,hyperlinks">
-        <title>De Hecketeers</title>
-    </head>
-<body>
-    <header>
-    <img src="images/logo.png" alt="home" width="80px" height="80px"></p>
-    <h1 class ="Main">DE_HECKETEERS</h1>
-    <search>  
+<header>
+    <img src="images/logo.png" alt="home" width="80" height="80">
+    <h1 class="Main">DE_HECKETEERS</h1>
+
+    <div class="header-row">
+        <search>
             <form action="/search" method="get">
-                    <label for="search">Search:</label>
-                    <input type="text" id="search" name="search">
-                    <button type="submit">Search</button>
+                <label for="search">Search:</label>
+                <input type="text" id="search" name="search">
+                <button type="submit">Search</button>
             </form>
-    </search>
-    </header>
-</body>
-</html>
+        </search>
+
+        <?php include 'nav.inc'; ?>
+    </div>
+</header>
