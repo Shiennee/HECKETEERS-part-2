@@ -10,9 +10,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $password = $_POST['password'] ?? '';
 
     try {
-        $conn = new mysqli($host, $user, $pwd, $sql_db);
+        $connect= new mysqli($host, $user, $pwd, $sql_db);
 
-        $stmt = $conn->prepare(
+        $stmt = $connect->prepare(
             'SELECT id, password_hash FROM hr_users WHERE username = ?'
         );
         $stmt->bind_param('s', $username);
