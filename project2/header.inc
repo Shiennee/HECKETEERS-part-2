@@ -15,7 +15,6 @@
     <search>
           
                 
-            </nav>
             
             <form action="/search" method="get">
                     <label for="search">Search:</label>
