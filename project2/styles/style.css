@@ -35,12 +35,26 @@ header h1:hover{
 
 header img {float:left}
 
-header search {
-    display: block;
+.header-row {
     clear: both;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 12px;
 }
 
-nav {float:right; margin: bottom;padding-top: 2em;}
+.header-row form {
+    margin: 0;
+    max-width: none;
+}
+
+.header-row nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
 
 nav a {
         text-decoration: none;
