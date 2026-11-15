@@ -15,7 +15,6 @@
     <search>
           
                 
-            
             <form action="/search" method="get">
                     <label for="search">Search:</label>
                     <input type="text" id="search" name="search">
