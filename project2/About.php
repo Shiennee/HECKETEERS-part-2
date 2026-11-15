@@ -67,7 +67,7 @@ if (!$result) {
         <td>immune to coffee and tea</td>
         <td>🎵matcha is your best of friends🎵</td>
         <td>Loves ice cream</td>
-        <td>patients is the key of truth life</td>
+        <td>Low battery mode by default</td>
         </tr>
         <tr>
         <td></td>
