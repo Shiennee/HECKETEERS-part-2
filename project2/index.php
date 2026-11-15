@@ -12,7 +12,6 @@
 
     <body>
         <?php include 'header.inc';?>
-        <?php include 'nav.inc';?>
         <main>
         <section class="description">
         <h1>Got de problem,</h1>
